@@ -1,7 +1,7 @@
 import { PrismaClient } from "@prisma/client";
 import { UserModel } from "../../domain/models/UserModel";
 import { DataSource } from "../data.repository";
-import { UserDto } from "../../domain/models/UserDto";
+import { UserDto } from "../../domain/dto/UserDto";
 
 export default class UsersRepository
   implements DataSource<UserModel, UserDto, number>
